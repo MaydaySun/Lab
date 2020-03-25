@@ -1,0 +1,19 @@
+*{text-decoration: none;list-style: none}
+a{color: black;margin: auto 30px}
+a:hover{color: lightblue}
+body{margin: 0;background-color: #f6f6f6;background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
+    background-repeat: no-repeat;background-color: #b8e5f8;background-size: cover;}
+header{padding-left: 10%;padding-right: 10%;height: 70px;background-color: white;padding-top: 5px}
+img{float: left;}
+.div_left{float: left;vertical-align: baseline}
+.div_right{float: right;position: relative;top:-80px}
+h3{font-weight: bold;text-align: center;font-size: x-large}
+section{margin: 0 auto;width: 80%;background-color: white;font-family: sans-serif;font-size: large;border-radius: 5px}
+ul{padding: 40px}
+li p{font-size: medium}
+.readAll{color: deepskyblue}
+blockquote{border-style: solid;border-width: 1px;border-radius: 3px;width: 100px;text-align: center;
+    background-color: lightskyblue;opacity: 0.75}
+aside{float: right;margin: 1% 0;line-height: 40px;border-style: solid;border-width: 1px;border-color: #eeedec}
+.currentPage{color: lightskyblue}
+.pageFooter{text-align: center}
