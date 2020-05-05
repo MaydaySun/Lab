@@ -57,7 +57,7 @@ function testRedundancy(str) {
     let strArr = str.split(" ");
     let resultArr = new Array();
     for (let i = 0; i < strArr.length - 1; i++) {
-        const pattern = new RegExp("^" + strArr[i],"gi");
+        const pattern = new RegExp("^" + strArr[i],"i");
         if(pattern.test(strArr[i+1]))
             resultArr.push(strArr[i] + " " + strArr[i+1]);
     }
