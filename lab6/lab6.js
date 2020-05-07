@@ -13,17 +13,19 @@
 //在其他题完成后开始运行（防止被割裂）
 function testTime(){
     let value = 1;
-	let count = 0;
-    console.log(value + "\n");
+    let count = 0;
+    return function(){
+        console.log(value + "\n");
 	const t = window.setInterval(function exe(){
-        count++;
-        value *= 2;
-        console.log(value + " ");
-        if (new Date().getSeconds() === 0 || count === 10){
-            window.clearInterval(t);
-            console.log("count:" + count + " ; time:" + count * 5 + "s");
-        }
-    },5000);
+            count++;
+            value *= 2;
+            console.log(value + " ");
+            if (new Date().getSeconds() === 0 || count === 10){
+                window.clearInterval(t);
+                console.log("count:" + count + " ; time:" + count * 5 + "s");
+            }
+        },5000);
+    }
 }
 
 
@@ -275,4 +277,5 @@ function Country() {
     China = new DevelopingCountry();US = new DevelopedCountry();Africa = new PoorCountry();
     China.sayHi();Africa.saySad();US.sayHappy();
 
-testTime();
+let timeTest = testTime();
+timeTest();
