@@ -1,0 +1,2 @@
+#lab8设计文档
+用innerHTML向td中插入input时会出现input没有父节点，需要指定parentNode或使用outerHTML插入包含在一个td内的input
